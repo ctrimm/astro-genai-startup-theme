@@ -7,9 +7,11 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { label: "Features", href: "#features" },
-    { label: "Pricing", href: "#pricing" },
-    { label: "FAQ", href: "#faq" },
+    { label: "Features", href: "/#features" },
+    { label: "Pricing", href: "/#pricing" },
+    { label: "Blog", href: "/blog" },
+    { label: "About", href: "/about" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (

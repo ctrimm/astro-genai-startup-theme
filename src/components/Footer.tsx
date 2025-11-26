@@ -56,7 +56,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="#features"
+                  href="/#features"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Features
@@ -64,7 +64,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#pricing"
+                  href="/#pricing"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Pricing
@@ -72,10 +72,10 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/#faq"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Documentation
+                  FAQ
                 </a>
               </li>
               <li>
@@ -95,7 +95,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="#"
+                  href="/about"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   About
@@ -103,7 +103,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/blog"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Blog
@@ -119,7 +119,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/contact"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Contact
@@ -154,19 +154,19 @@ export function Footer() {
           </p>
           <div className="flex gap-6">
             <a
-              href="#"
+              href="/privacy"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               Privacy Policy
             </a>
             <a
-              href="#"
+              href="/terms"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               Terms of Service
             </a>
             <a
-              href="#"
+              href="/privacy#cookies"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               Cookie Policy
