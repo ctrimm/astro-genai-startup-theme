@@ -89,6 +89,19 @@
   animation: marquee 30s linear infinite;
 }
 
+.animate-marquee-reverse {
+  animation: marquee 30s linear infinite reverse;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+}
+
 @keyframes blob {
   0%, 100% {
     transform: translate(0px, 0px) scale(1);

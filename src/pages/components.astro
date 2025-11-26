@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/main.astro';
 import { ComponentShowcase } from '@/components/ComponentShowcase';
+import { AdvancedShowcase } from '@/components/AdvancedShowcase';
+import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 ---
 
 <Layout title="Components - GenAI">
@@ -19,7 +21,18 @@ import { ComponentShowcase } from '@/components/ComponentShowcase';
 					</p>
 				</div>
 
-				<ComponentShowcase client:load />
+				<Tabs defaultValue="basic" className="w-full" client:load>
+					<TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-8">
+						<TabsTrigger value="basic">Basic Components</TabsTrigger>
+						<TabsTrigger value="advanced">Advanced Components</TabsTrigger>
+					</TabsList>
+					<TabsContent value="basic">
+						<ComponentShowcase client:load />
+					</TabsContent>
+					<TabsContent value="advanced">
+						<AdvancedShowcase client:load />
+					</TabsContent>
+				</Tabs>
 			</div>
 		</div>
 	</section>
