@@ -1,85 +1,235 @@
-# Astro + React + shadcn/ui + Tailwind + TypeScript Template
+# 🚀 GenAI Startup Astro Theme
 
-A modern, feature-rich starter template combining the power of Astro with React components, shadcn/ui component library, Tailwind CSS styling, and TypeScript type safety.
+A modern, beautiful, and **completely free** Astro theme template designed specifically for GenAI and AI-focused startups. Features a stunning dark/light mode toggle, smooth animations, and ready-to-deploy components.
 
-> **Important**: This is a template repository. Do not push directly to this repository. Instead, use the "Use this template" button on GitHub to create a new repository based on this template. The template button can be found at the top of the repository page:
+![GenAI Theme](https://img.shields.io/badge/Astro-5.16-blueviolet) ![License](https://img.shields.io/badge/license-MIT-green) ![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue)
 
-![Template Button Location](template-dropdown.png)
+## ✨ Features
 
-For more information about template repositories, see the [GitHub documentation](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository).
+- 🎨 **Beautiful Design** - Modern, clean UI with gradient accents and smooth animations
+- 🌓 **Dark/Light Mode** - Fully functional theme toggle with localStorage persistence
+- ⚡ **Lightning Fast** - Built with Astro for optimal performance
+- 📱 **Fully Responsive** - Perfect on mobile, tablet, and desktop
+- 🎭 **Framer Motion** - Smooth scroll animations and transitions
+- 🧩 **Pre-built Sections**:
+  - Hero with animated gradients
+  - Features showcase
+  - Pricing cards
+  - Testimonials
+  - FAQ with accordion
+  - Newsletter signup
+  - Social links
+- 🎯 **TypeScript** - Full type safety
+- 🎨 **Tailwind CSS v4** - Latest utility-first CSS framework
+- 🧱 **shadcn/ui** - Beautiful, accessible components
+- 🚀 **GitHub Pages Ready** - Deploy with one click
+- ♿ **Accessible** - WCAG compliant components
 
-## Features
+## 🎯 Perfect For
 
-- ⚡️ **[Astro](https://astro.build/)** - A modern static site builder with exceptional performance
-- ⚛️ **[React](https://reactjs.org/)** - UI component library integration
-- 🎨 **[shadcn/ui](https://ui.shadcn.com/)** - Beautiful and accessible component library
-- 🎯 **[TypeScript](https://www.typescriptlang.org/)** - Type safety and enhanced developer experience
-- 🎨 **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
-- 📦 **Modern Stack** - Latest versions of all major dependencies
-- 🚀 **Performance Focused** - Optimized for speed and efficiency
-- 📱 **Responsive Design** - Mobile-first approach
-- ✨ **Interactive Examples** - Includes demo components (like confetti effects!)
+- AI/GenAI Startups
+- SaaS Landing Pages
+- API Documentation Sites
+- Developer Tools
+- Tech Product Launches
 
-## Quick Start
+## 🚀 Quick Start
 
-1. Click the "Use this template" button above to create a new repository based on this template.
+### 1. Clone the repository
 
-2. Clone your new repository:
 ```bash
-git clone https://github.com/automatearmy/astro-react-shad-tailwind-template-repo.git
-cd your-new-repo-name
+git clone https://github.com/yourusername/astro-genai-startup-theme.git
+cd astro-genai-startup-theme
 ```
 
-3. Install dependencies:
+### 2. Install dependencies
+
 ```bash
 npm install
 ```
 
-4. Start the development server:
+### 3. Start development server
+
 ```bash
 npm run dev
 ```
 
 Visit `http://localhost:4321` to see your site!
 
-## Available Commands
+### 4. Build for production
 
-- `npm run dev` - Start development server
-- `npm run build` - Build your production site
-- `npm run preview` - Preview your build locally
-- `npm run astro` - Run Astro commands
+```bash
+npm run build
+```
 
-## Project Structure
+## 📦 What's Included
+
+### Components
+
+- **Header** - Responsive navigation with theme toggle
+- **Hero** - Eye-catching hero section with animated gradients and stats
+- **Features** - Grid of feature cards with icons and hover effects
+- **Pricing** - Comparison pricing cards with highlighted popular plan
+- **Testimonials** - Customer testimonials with ratings
+- **FAQ** - Accordion-style frequently asked questions
+- **Footer** - Complete footer with links and newsletter signup
+- **ThemeToggle** - Dark/light mode switcher
+
+### Pages
+
+- `index.astro` - Main landing page with all sections
+- `markdown-page.md` - Example markdown page
+
+### Layouts
+
+- `main.astro` - Main layout with header and footer
+
+## 🎨 Customization
+
+### Colors
+
+Edit `src/styles/global.css` to customize your brand colors. The theme uses CSS variables for easy customization:
+
+```css
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.147 0.004 49.25);
+  /* ... more variables */
+}
+```
+
+### Content
+
+Update the content in the component files:
+- `src/components/Hero.tsx` - Hero section text and stats
+- `src/components/Features.tsx` - Feature list
+- `src/components/Pricing.tsx` - Pricing tiers
+- `src/components/Testimonials.tsx` - Customer reviews
+- `src/components/FAQ.tsx` - Questions and answers
+
+### Branding
+
+Replace the logo and brand name in:
+- `src/components/Header.tsx`
+- `src/components/Footer.tsx`
+- `src/layouts/main.astro` (page title)
+
+## 🚀 Deploy to GitHub Pages
+
+### Automatic Deployment
+
+This theme includes a GitHub Actions workflow for automatic deployment:
+
+1. Update `astro.config.js` with your repository details:
+```js
+export default defineConfig({
+  site: 'https://yourusername.github.io',
+  base: '/your-repo-name',
+  // ...
+});
+```
+
+2. Push to your repository:
+```bash
+git add .
+git commit -m "Initial commit"
+git push origin main
+```
+
+3. Enable GitHub Pages in your repository settings:
+   - Go to Settings → Pages
+   - Source: GitHub Actions
+
+4. Your site will be automatically deployed on every push!
+
+### Manual Deployment
+
+```bash
+npm run build
+# Upload the contents of the dist/ folder to your hosting provider
+```
+
+## 📁 Project Structure
 
 ```
 /
+├── .github/
+│   └── workflows/
+│       └── deploy.yml          # GitHub Pages deployment
 ├── public/
 │   └── favicon.svg
 ├── src/
 │   ├── components/
-│   │   └── ui/
+│   │   ├── ui/                 # shadcn/ui components
+│   │   │   ├── accordion.tsx
+│   │   │   └── button.tsx
+│   │   ├── FAQ.tsx
+│   │   ├── Features.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Header.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Pricing.tsx
+│   │   ├── Testimonials.tsx
+│   │   └── ThemeToggle.tsx
 │   ├── layouts/
+│   │   └── main.astro
 │   ├── lib/
+│   │   └── utils.ts
 │   ├── pages/
+│   │   └── index.astro
 │   └── styles/
+│       └── global.css
 ├── astro.config.js
+├── components.json
+├── package.json
 ├── tailwind.config.mjs
-└── tsconfig.json
+├── tsconfig.json
+└── TODO.md                     # Development progress tracker
 ```
 
-## Dependencies
+## 🛠️ Tech Stack
 
-- Astro v5.5
-- React v19
-- Tailwind CSS v4
-- TypeScript
-- shadcn/ui components
-- Additional utilities like `clsx`, `tailwind-merge`, and `canvas-confetti`
+- **[Astro 5.16](https://astro.build/)** - Static site generator
+- **[React 19](https://react.dev/)** - UI components
+- **[TypeScript](https://www.typescriptlang.org/)** - Type safety
+- **[Tailwind CSS 4](https://tailwindcss.com/)** - Styling
+- **[shadcn/ui](https://ui.shadcn.com/)** - Component library
+- **[Framer Motion](https://www.framer.com/motion/)** - Animations
+- **[Lucide Icons](https://lucide.dev/)** - Icon library
+- **[Radix UI](https://www.radix-ui.com/)** - Accessible primitives
 
-## License
+## 📝 Available Scripts
+
+```bash
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run preview      # Preview production build
+npm run astro        # Run Astro CLI commands
+```
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/astro-genai-startup-theme/issues).
+
+## 📄 License
 
 MIT License - feel free to use this template for your own projects!
 
-## Contributing
+Copyright (c) 2025
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+## 🙏 Credits
+
+- Inspired by modern SaaS landing pages
+- Components inspired by [reactbits.dev](https://reactbits.dev)
+- Built with love for the GenAI community
+
+## 💖 Support
+
+If you find this template useful, please consider:
+- ⭐ Starring the repository
+- 🐦 Sharing on Twitter
+- 📝 Writing a blog post about it
+
+---
+
+**Built with ❤️ for the GenAI community**
