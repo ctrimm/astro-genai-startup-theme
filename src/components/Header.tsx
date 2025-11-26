@@ -9,6 +9,7 @@ export function Header() {
   const navItems = [
     { label: "Features", href: "/#features" },
     { label: "Pricing", href: "/#pricing" },
+    { label: "Components", href: "/components" },
     { label: "Blog", href: "/blog" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
