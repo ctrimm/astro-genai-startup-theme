@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { MagicCard } from "@/components/MagicCard";
 import { BentoGrid, BentoCard } from "@/components/BentoGrid";
 import { MarqueeLogos } from "@/components/MarqueeLogos";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
@@ -21,6 +22,7 @@ import {
   FileQuestion,
   Rocket,
   Shield,
+  Wand2,
 } from "lucide-react";
 
 export function AdvancedShowcase() {
@@ -46,6 +48,80 @@ export function AdvancedShowcase() {
 
   return (
     <div className="space-y-16">
+      {/* Magic Card - Featured */}
+      <section>
+        <div className="flex items-center gap-2 mb-2">
+          <h2 className="text-3xl font-bold">Magic Card</h2>
+          <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-purple-500 to-pink-500 text-white">
+            <Wand2 className="h-3 w-3" />
+            Featured
+          </span>
+        </div>
+        <p className="text-muted-foreground mb-6">
+          Interactive 3D card with spotlight effect, shimmer animation, and smooth tilt
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+          <MagicCard className="p-8">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-pink-500">
+                <Sparkles className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold">AI Powered</h3>
+            </div>
+            <p className="text-muted-foreground mb-4">
+              Hover over this card to see the magic! Watch as the spotlight follows
+              your cursor with smooth 3D tilt effects.
+            </p>
+            <div className="flex gap-2">
+              <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm">
+                Interactive
+              </span>
+              <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm">
+                3D Effect
+              </span>
+            </div>
+          </MagicCard>
+
+          <MagicCard
+            className="p-8"
+            gradientColor="#3b82f6"
+            gradientSize={250}
+          >
+            <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500">
+                <Zap className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold">Lightning Fast</h3>
+            </div>
+            <p className="text-muted-foreground mb-4">
+              Customizable gradient colors and sizes. Each card can have its own
+              unique spotlight effect.
+            </p>
+            <Button className="w-full">
+              <Rocket className="mr-2 h-4 w-4" />
+              Get Started
+            </Button>
+          </MagicCard>
+        </div>
+        <CodeBlock
+          code={`import { MagicCard } from "@/components/MagicCard";
+
+<MagicCard className="p-8">
+  <h3>Your Content</h3>
+  <p>Hover to see the magic!</p>
+</MagicCard>
+
+{/* Custom gradient color */}
+<MagicCard
+  gradientColor="#3b82f6"
+  gradientSize={250}
+  gradientOpacity={0.6}
+>
+  <p>Blue spotlight effect</p>
+</MagicCard>`}
+        />
+      </section>
+
       {/* Bento Grid */}
       <section>
         <h2 className="text-3xl font-bold mb-2">Bento Grid</h2>
