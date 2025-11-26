@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/main.astro';
+import { Button } from "@/components/ui/button"
+---
+
+<Layout>
+	<div class="flex items-center justify-center min-h-screen">
+		<Button>Click for Confetti! 🎉</Button>
+	</div>
+</Layout>
+
+<script>
+	import confetti from 'canvas-confetti';
+	const button = document.querySelector('[data-slot="button"]');
+
+	if (button) {
+		button.addEventListener('click', () => confetti());
+	}
+</script>
