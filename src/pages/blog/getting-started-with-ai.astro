@@ -1,6 +1,8 @@
 ---
 import Layout from '../../layouts/main.astro';
 import { Calendar, Clock, ArrowLeft, Share2 } from 'lucide-react';
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <Layout title="Getting Started with AI: A Beginner's Guide - GenAI">
@@ -8,7 +10,7 @@ import { Calendar, Clock, ArrowLeft, Share2 } from 'lucide-react';
 		<div class="container mx-auto px-4">
 			<div class="max-w-4xl mx-auto">
 				<!-- Back Button -->
-				<a href="/blog" class="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8">
+				<a href={`${base}blog`} class="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8">
 					<ArrowLeft class="h-4 w-4" />
 					Back to Blog
 				</a>
@@ -155,7 +157,7 @@ console.log(response.text);`}</code></pre>
 						AI opportunities, taking the first step is what matters most.
 					</p>
 					<p>
-						Ready to build something amazing? <a href="/#pricing">Get started with GenAI today</a>.
+						Ready to build something amazing? <a href={`${base}#pricing`}>Get started with GenAI today</a>.
 					</p>
 				</div>
 
@@ -185,7 +187,7 @@ console.log(response.text);`}</code></pre>
 				<div class="mt-12 pt-8 border-t">
 					<h3 class="text-2xl font-bold mb-6">Related Articles</h3>
 					<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-						<a href="/blog/prompt-engineering-101" class="group p-6 rounded-xl border bg-card hover:shadow-lg transition-all">
+						<a href={`${base}blog/prompt-engineering-101`} class="group p-6 rounded-xl border bg-card hover:shadow-lg transition-all">
 							<span class="inline-block px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary mb-3">
 								Tutorial
 							</span>
@@ -196,7 +198,7 @@ console.log(response.text);`}</code></pre>
 								Master the art of prompt engineering to get better results from AI language models.
 							</p>
 						</a>
-						<a href="/blog/building-scalable-ai-applications" class="group p-6 rounded-xl border bg-card hover:shadow-lg transition-all">
+						<a href={`${base}blog/building-scalable-ai-applications`} class="group p-6 rounded-xl border bg-card hover:shadow-lg transition-all">
 							<span class="inline-block px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary mb-3">
 								Engineering
 							</span>
