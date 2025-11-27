@@ -1,12 +1,12 @@
-import { LucideIcon } from "lucide-react";
 import { motion } from "framer-motion";
+import type { FC, SVGProps } from "react";
 
 interface StatCardProps {
   title: string;
   value: string | number;
   change?: string;
   changeType?: "positive" | "negative" | "neutral";
-  icon?: LucideIcon;
+  icon?: FC<SVGProps<SVGSVGElement>>;
   gradient?: string;
 }
 

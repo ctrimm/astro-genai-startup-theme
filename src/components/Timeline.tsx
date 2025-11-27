@@ -1,10 +1,10 @@
-import { LucideIcon } from "lucide-react";
+import type { FC, SVGProps } from "react";
 
 interface TimelineItem {
   title: string;
   description: string;
   date: string;
-  icon?: LucideIcon;
+  icon?: FC<SVGProps<SVGSVGElement>>;
 }
 
 interface TimelineProps {
