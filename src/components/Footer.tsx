@@ -1,5 +1,6 @@
 import { Sparkles, Github, Twitter, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { withBase } from "@/lib/utils";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -56,7 +57,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="/#features"
+                  href={withBase("/#features")}
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Features
@@ -64,7 +65,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="/#pricing"
+                  href={withBase("/#pricing")}
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Pricing
@@ -72,7 +73,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="/#faq"
+                  href={withBase("/#faq")}
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   FAQ
@@ -95,7 +96,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="/about"
+                  href={withBase("/about")}
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   About
@@ -103,7 +104,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="/blog"
+                  href={withBase("/blog")}
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Blog
@@ -119,7 +120,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="/contact"
+                  href={withBase("/contact")}
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Contact
@@ -154,19 +155,19 @@ export function Footer() {
           </p>
           <div className="flex gap-6">
             <a
-              href="/privacy"
+              href={withBase("/privacy")}
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               Privacy Policy
             </a>
             <a
-              href="/terms"
+              href={withBase("/terms")}
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               Terms of Service
             </a>
             <a
-              href="/privacy#cookies"
+              href={withBase("/privacy#cookies")}
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               Cookie Policy

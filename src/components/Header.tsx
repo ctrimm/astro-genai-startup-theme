@@ -2,24 +2,25 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { Menu, X, Sparkles } from "lucide-react";
+import { withBase } from "@/lib/utils";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { label: "Features", href: "/#features" },
-    { label: "Pricing", href: "/#pricing" },
-    { label: "Components", href: "/components" },
-    { label: "Blog", href: "/blog" },
-    { label: "About", href: "/about" },
-    { label: "Contact", href: "/contact" },
+    { label: "Features", href: withBase("/#features") },
+    { label: "Pricing", href: withBase("/#pricing") },
+    { label: "Components", href: withBase("/components") },
+    { label: "Blog", href: withBase("/blog") },
+    { label: "About", href: withBase("/about") },
+    { label: "Contact", href: withBase("/contact") },
   ];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <nav className="container flex h-16 items-center justify-between">
         {/* Logo */}
-        <a href="/" className="flex items-center space-x-2">
+        <a href={withBase("/")} className="flex items-center space-x-2">
           <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500">
             <Sparkles className="h-5 w-5 text-white" />
           </div>

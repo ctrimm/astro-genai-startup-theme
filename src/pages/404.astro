@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/main.astro';
 import { Home, Search, ArrowLeft } from 'lucide-react';
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <Layout title="Page Not Found - GenAI">
@@ -33,7 +35,7 @@ import { Home, Search, ArrowLeft } from 'lucide-react';
 				{/* Actions */}
 				<div class="flex flex-col sm:flex-row gap-4 justify-center">
 					<a
-						href="/"
+						href={base}
 						class="inline-flex items-center justify-center gap-2 h-10 px-6 rounded-md bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors"
 					>
 						<Home class="h-4 w-4" />
@@ -54,22 +56,22 @@ import { Home, Search, ArrowLeft } from 'lucide-react';
 						Here are some helpful links instead:
 					</p>
 					<div class="flex flex-wrap gap-4 justify-center">
-						<a href="/#features" class="text-sm text-primary hover:underline">
+						<a href={`${base}#features`} class="text-sm text-primary hover:underline">
 							Features
 						</a>
-						<a href="/#pricing" class="text-sm text-primary hover:underline">
+						<a href={`${base}#pricing`} class="text-sm text-primary hover:underline">
 							Pricing
 						</a>
-						<a href="/blog" class="text-sm text-primary hover:underline">
+						<a href={`${base}blog`} class="text-sm text-primary hover:underline">
 							Blog
 						</a>
-						<a href="/about" class="text-sm text-primary hover:underline">
+						<a href={`${base}about`} class="text-sm text-primary hover:underline">
 							About
 						</a>
-						<a href="/contact" class="text-sm text-primary hover:underline">
+						<a href={`${base}contact`} class="text-sm text-primary hover:underline">
 							Contact
 						</a>
-						<a href="/#faq" class="text-sm text-primary hover:underline">
+						<a href={`${base}#faq`} class="text-sm text-primary hover:underline">
 							FAQ
 						</a>
 					</div>
