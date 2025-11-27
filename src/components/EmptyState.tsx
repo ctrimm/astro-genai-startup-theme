@@ -1,8 +1,8 @@
-import { LucideIcon } from "lucide-react";
+import type { FC, SVGProps } from "react";
 import { Button } from "@/components/ui/button";
 
 interface EmptyStateProps {
-  icon?: LucideIcon;
+  icon?: FC<SVGProps<SVGSVGElement>>;
   title: string;
   description: string;
   action?: {
