@@ -2,6 +2,8 @@
 import '../styles/global.css';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { CommandPalette } from '@/components/CommandPalette';
+import { CookieConsent } from '@/components/CookieConsent';
 const { title = "GenAI - Build the Future with AI" } = Astro.props;
 ---
 
@@ -19,5 +21,7 @@ const { title = "GenAI - Build the Future with AI" } = Astro.props;
 			<slot />
 		</main>
 		<Footer />
+		<CommandPalette client:load />
+		<CookieConsent client:load />
 	</body>
 </html>
