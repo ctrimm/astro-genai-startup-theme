@@ -11,8 +11,8 @@ export function Header() {
     { label: "Features", href: withBase("/#features") },
     { label: "Pricing", href: withBase("/#pricing") },
     { label: "Components", href: withBase("/components") },
-    { label: "Blog", href: withBase("/blog") },
-    { label: "About", href: withBase("/about") },
+    { label: "Dashboard", href: withBase("/dashboard") },
+    { label: "Changelog", href: withBase("/changelog") },
     { label: "Contact", href: withBase("/contact") },
   ];
 
