@@ -73,18 +73,18 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href={withBase("/#faq")}
+                  href={withBase("/components")}
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  FAQ
+                  Components
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href={withBase("/dashboard")}
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  API Reference
+                  Dashboard
                 </a>
               </li>
             </ul>
@@ -112,10 +112,10 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href={withBase("/changelog")}
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Careers
+                  Changelog
                 </a>
               </li>
               <li>

@@ -1,8 +1,8 @@
 # 🚀 GenAI Startup Astro Theme
 
-A modern, beautiful, and **completely free** Astro theme template designed specifically for GenAI and AI-focused startups. Features a stunning dark/light mode toggle, smooth animations, and ready-to-deploy components.
+A modern, beautiful, and **completely free** Astro theme template designed specifically for GenAI and AI-focused startups. Features a stunning dark/light mode toggle, 30+ production-ready components, interactive demos, and everything you need to launch your AI product.
 
-![GenAI Theme](https://img.shields.io/badge/Astro-5.16-blueviolet) ![License](https://img.shields.io/badge/license-MIT-green) ![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue)
+![GenAI Theme](https://img.shields.io/badge/Astro-4.16-blueviolet) ![License](https://img.shields.io/badge/license-MIT-green) ![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue) ![Components](https://img.shields.io/badge/Components-30+-orange)
 
 ## ✨ Features
 
@@ -11,19 +11,13 @@ A modern, beautiful, and **completely free** Astro theme template designed speci
 - ⚡ **Lightning Fast** - Built with Astro for optimal performance
 - 📱 **Fully Responsive** - Perfect on mobile, tablet, and desktop
 - 🎭 **Framer Motion** - Smooth scroll animations and transitions
-- 🧩 **Pre-built Sections**:
-  - Hero with animated gradients
-  - Features showcase
-  - Pricing cards
-  - Testimonials
-  - FAQ with accordion
-  - Newsletter signup
-  - Social links
-- 🎯 **TypeScript** - Full type safety
-- 🎨 **Tailwind CSS v4** - Latest utility-first CSS framework
-- 🧱 **shadcn/ui** - Beautiful, accessible components
+- 🎯 **TypeScript** - Full type safety throughout
+- 🎨 **Tailwind CSS v3** - Utility-first CSS framework
+- 🧱 **shadcn/ui** - Beautiful, accessible component primitives
 - 🚀 **GitHub Pages Ready** - Deploy with one click
 - ♿ **Accessible** - WCAG compliant components
+- ⌨️ **Command Palette** - Modern Cmd+K navigation (like Linear, Vercel)
+- 🍪 **GDPR Compliant** - Cookie consent with granular preferences
 
 ## 🎯 Perfect For
 
@@ -32,13 +26,14 @@ A modern, beautiful, and **completely free** Astro theme template designed speci
 - API Documentation Sites
 - Developer Tools
 - Tech Product Launches
+- LLM/ML Product Showcases
 
 ## 🚀 Quick Start
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/astro-genai-startup-theme.git
+git clone https://github.com/ctrimm/astro-genai-startup-theme.git
 cd astro-genai-startup-theme
 ```
 
@@ -64,25 +59,153 @@ npm run build
 
 ## 📦 What's Included
 
-### Components
+### 🎨 Basic UI Components (11)
 
-- **Header** - Responsive navigation with theme toggle
-- **Hero** - Eye-catching hero section with animated gradients and stats
-- **Features** - Grid of feature cards with icons and hover effects
-- **Pricing** - Comparison pricing cards with highlighted popular plan
-- **Testimonials** - Customer testimonials with ratings
-- **FAQ** - Accordion-style frequently asked questions
-- **Footer** - Complete footer with links and newsletter signup
-- **ThemeToggle** - Dark/light mode switcher
+- **Badge** - Status indicators and labels
+- **Alert** - Notification boxes with variants
+- **Card** - Content containers with shadows
+- **Button** - Interactive buttons with variants
+- **Spinner** - Loading indicators
+- **Progress** - Progress bars
+- **Tabs** - Tabbed navigation
+- **Avatar** - User profile images
+- **Input** - Form input fields
+- **StatCard** - Metric cards with icons
+- **Timeline** - Event timeline display
+- **CodeBlock** - Syntax-highlighted code with copy button
 
-### Pages
+### 🚀 Advanced Components (12)
 
-- `index.astro` - Main landing page with all sections
-- `markdown-page.md` - Example markdown page
+1. **Command Palette** - Cmd+K quick navigation menu
+   - Keyboard shortcuts
+   - Searchable commands
+   - Categorized actions
+   - Always available globally
 
-### Layouts
+2. **Chat Interface** - AI chatbot component
+   - Message history
+   - Typing indicators
+   - User/Assistant styling
+   - Auto-scrolling
 
-- `main.astro` - Main layout with header and footer
+3. **Toast Notifications** - Beautiful notifications
+   - 4 variants (success, error, warning, info)
+   - Auto-dismiss
+   - Stacked display
+   - Custom icons
+
+4. **Pricing Calculator** - Interactive pricing
+   - Volume-based tiers
+   - Monthly/Annual toggle
+   - Real-time calculations
+   - Visual slider
+
+5. **Social Proof Widgets** - Trust builders
+   - Live user count with animation
+   - Stats ticker with countup
+   - Trust badges (SOC 2, GDPR, etc.)
+   - Recent activity feed
+
+6. **Cookie Consent** - GDPR compliance
+   - Granular preferences
+   - Necessary/Analytics/Marketing cookies
+   - Custom toggle switches
+   - LocalStorage persistence
+
+7. **File Upload** - Drag-and-drop uploader
+   - Multiple file support
+   - Progress bars
+   - File size display
+   - Success/Error states
+
+8. **Metrics Dashboard** - Analytics display
+   - Metric cards with trends
+   - Activity charts
+   - Regional stats
+   - Recent activity table
+
+9. **BentoGrid** - Modern grid layout
+10. **MarqueeLogos** - Infinite scrolling carousel
+11. **AnimatedCounter** - Number counting animations
+12. **GradientText** - Animated gradient text
+13. **GlassCard** - Glassmorphism effects
+14. **ShimmerButton** - Shimmer effect buttons
+15. **EmptyState** - Empty state UI
+16. **PricingToggle** - Monthly/Annual switcher
+17. **FeatureComparison** - Feature comparison table
+18. **MagicCard** - 3D interactive card with spotlight effect
+
+### 📄 Pages (13)
+
+1. **/** - Homepage
+   - Hero with animated gradients
+   - Features showcase
+   - Pricing cards
+   - Testimonials
+   - FAQ accordion
+   - Newsletter signup
+
+2. **/about** - About page
+   - Company mission
+   - Team values
+   - Vision statement
+
+3. **/blog** - Blog listing
+   - Post grid
+   - Categories
+   - Read time
+
+4. **/blog/getting-started-with-ai** - Sample blog post
+   - Full article layout
+   - Related posts
+   - Social sharing
+
+5. **/contact** - Contact page
+   - Contact form
+   - Office location
+   - Support hours
+
+6. **/components** - Component library
+   - Basic components showcase
+   - Advanced components showcase
+   - Live demos
+   - Code examples
+
+7. **/advanced-components** - Advanced showcase
+   - Command Palette demo
+   - Chat Interface demo
+   - Toast notifications demo
+   - Pricing Calculator demo
+   - Social Proof widgets demo
+   - File Upload demo
+   - All with code snippets
+
+8. **/dashboard** - Dashboard demo
+   - Metrics overview
+   - API usage tracking
+   - Quick actions
+   - AI chat assistant
+   - API keys management
+   - Analytics charts
+
+9. **/changelog** - Product changelog
+   - Version timeline
+   - Feature announcements
+   - Bug fixes log
+   - Update subscription
+
+10. **/privacy** - Privacy policy
+11. **/terms** - Terms of service
+12. **/404** - Custom 404 page
+
+### 🎨 Layouts
+
+- **main.astro** - Main layout with header, footer, command palette, and cookie consent
+
+### 🛠️ Utilities
+
+- **withBase()** - Base path helper for GitHub Pages routing
+- **cn()** - Tailwind class merging utility
 
 ## 🎨 Customization
 
@@ -91,10 +214,19 @@ npm run build
 Edit `src/styles/global.css` to customize your brand colors. The theme uses CSS variables for easy customization:
 
 ```css
-:root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.147 0.004 49.25);
-  /* ... more variables */
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    /* ... more variables */
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    /* ... more variables */
+  }
 }
 ```
 
@@ -113,6 +245,24 @@ Replace the logo and brand name in:
 - `src/components/Header.tsx`
 - `src/components/Footer.tsx`
 - `src/layouts/main.astro` (page title)
+
+### Command Palette
+
+Customize commands in `src/components/CommandPalette.tsx`:
+
+```tsx
+const commands: CommandItem[] = [
+  {
+    id: "home",
+    title: "Home",
+    description: "Go to homepage",
+    icon: Home,
+    action: () => window.location.href = withBase("/"),
+    category: "Navigation",
+  },
+  // Add your own commands...
+];
+```
 
 ## 🚀 Deploy to GitHub Pages
 
@@ -155,46 +305,90 @@ npm run build
 /
 ├── .github/
 │   └── workflows/
-│       └── deploy.yml          # GitHub Pages deployment
+│       └── deploy.yml              # GitHub Pages deployment
 ├── public/
 │   └── favicon.svg
 ├── src/
 │   ├── components/
-│   │   ├── ui/                 # shadcn/ui components
+│   │   ├── ui/                     # shadcn/ui primitives
 │   │   │   ├── accordion.tsx
-│   │   │   └── button.tsx
-│   │   ├── FAQ.tsx
-│   │   ├── Features.tsx
-│   │   ├── Footer.tsx
-│   │   ├── Header.tsx
-│   │   ├── Hero.tsx
-│   │   ├── Pricing.tsx
-│   │   ├── Testimonials.tsx
-│   │   └── ThemeToggle.tsx
+│   │   │   ├── alert.tsx
+│   │   │   ├── avatar.tsx
+│   │   │   ├── badge.tsx
+│   │   │   ├── button.tsx
+│   │   │   ├── card.tsx
+│   │   │   ├── input.tsx
+│   │   │   ├── progress.tsx
+│   │   │   ├── switch.tsx
+│   │   │   ├── tabs.tsx
+│   │   │   └── tooltip.tsx
+│   │   ├── AdvancedShowcase.tsx    # Advanced components demo
+│   │   ├── AnimatedCounter.tsx     # Number animations
+│   │   ├── BentoGrid.tsx          # Grid layout
+│   │   ├── ChatInterface.tsx      # AI chat component
+│   │   ├── CodeBlock.tsx          # Code display
+│   │   ├── CommandPalette.tsx     # Cmd+K navigation
+│   │   ├── ComponentShowcase.tsx  # Basic components demo
+│   │   ├── ComponentTabs.tsx      # Component page tabs
+│   │   ├── CookieConsent.tsx      # GDPR cookie banner
+│   │   ├── EmptyState.tsx         # Empty states
+│   │   ├── FAQ.tsx                # FAQ accordion
+│   │   ├── Features.tsx           # Features section
+│   │   ├── FeatureComparison.tsx  # Feature table
+│   │   ├── FileUpload.tsx         # File uploader
+│   │   ├── Footer.tsx             # Site footer
+│   │   ├── GlassCard.tsx          # Glassmorphism
+│   │   ├── GradientText.tsx       # Animated gradients
+│   │   ├── Header.tsx             # Site header
+│   │   ├── Hero.tsx               # Hero section
+│   │   ├── MagicCard.tsx          # 3D interactive card
+│   │   ├── MarqueeLogos.tsx       # Logo carousel
+│   │   ├── MetricsDashboard.tsx   # Analytics dashboard
+│   │   ├── Pricing.tsx            # Pricing cards
+│   │   ├── PricingCalculator.tsx  # Interactive pricing
+│   │   ├── PricingToggle.tsx      # Billing toggle
+│   │   ├── ShimmerButton.tsx      # Shimmer effects
+│   │   ├── SocialProof.tsx        # Trust widgets
+│   │   ├── StatCard.tsx           # Metric cards
+│   │   ├── Testimonials.tsx       # Customer reviews
+│   │   ├── ThemeToggle.tsx        # Dark/light toggle
+│   │   ├── Timeline.tsx           # Timeline display
+│   │   └── ToastDemo.tsx          # Notification demo
 │   ├── layouts/
-│   │   └── main.astro
+│   │   └── main.astro             # Main layout
 │   ├── lib/
-│   │   └── utils.ts
+│   │   └── utils.ts               # Utility functions
 │   ├── pages/
-│   │   └── index.astro
+│   │   ├── blog/
+│   │   │   ├── index.astro        # Blog listing
+│   │   │   └── getting-started-with-ai.astro
+│   │   ├── 404.astro              # Not found page
+│   │   ├── about.astro            # About page
+│   │   ├── advanced-components.astro # Advanced demos
+│   │   ├── changelog.astro        # Version history
+│   │   ├── components.astro       # Component library
+│   │   ├── contact.astro          # Contact page
+│   │   ├── dashboard.astro        # Dashboard demo
+│   │   ├── index.astro            # Homepage
+│   │   ├── privacy.astro          # Privacy policy
+│   │   └── terms.astro            # Terms of service
 │   └── styles/
-│       └── global.css
-├── astro.config.js
-├── components.json
+│       └── global.css             # Global styles
+├── astro.config.js                # Astro configuration
+├── components.json                # shadcn/ui config
 ├── package.json
-├── tailwind.config.mjs
-├── tsconfig.json
-└── TODO.md                     # Development progress tracker
+├── tailwind.config.mjs            # Tailwind config
+└── tsconfig.json                  # TypeScript config
 ```
 
 ## 🛠️ Tech Stack
 
-- **[Astro 5.16](https://astro.build/)** - Static site generator
-- **[React 19](https://react.dev/)** - UI components
+- **[Astro 4.16](https://astro.build/)** - Static site generator
+- **[React 18](https://react.dev/)** - UI components
 - **[TypeScript](https://www.typescriptlang.org/)** - Type safety
-- **[Tailwind CSS 4](https://tailwindcss.com/)** - Styling
+- **[Tailwind CSS 3](https://tailwindcss.com/)** - Styling
 - **[shadcn/ui](https://ui.shadcn.com/)** - Component library
-- **[Framer Motion](https://www.framer.com/motion/)** - Animations
+- **[Framer Motion 11](https://www.framer.com/motion/)** - Animations
 - **[Lucide Icons](https://lucide.dev/)** - Icon library
 - **[Radix UI](https://www.radix-ui.com/)** - Accessible primitives
 
@@ -207,9 +401,38 @@ npm run preview      # Preview production build
 npm run astro        # Run Astro CLI commands
 ```
 
+## ⌨️ Keyboard Shortcuts
+
+- **Cmd/Ctrl + K** - Open command palette
+- **Escape** - Close command palette/modals
+- **Arrow Keys** - Navigate command palette
+- **Enter** - Execute selected command
+
+## 🎨 Design Philosophy
+
+This template follows modern SaaS design principles:
+
+- **Minimalism** - Clean, uncluttered interface
+- **Consistency** - Unified design language
+- **Hierarchy** - Clear visual structure
+- **Accessibility** - WCAG 2.1 compliant
+- **Performance** - Optimized for speed
+- **Responsiveness** - Mobile-first approach
+
+## 🌟 Unique Features
+
+What makes this template stand out:
+
+1. **Command Palette** - Modern navigation pattern used by Linear, Vercel, GitHub
+2. **Complete Dashboard** - Not just a landing page, includes a full dashboard demo
+3. **AI-Ready Components** - Chat interface, metrics dashboard perfect for AI products
+4. **Advanced Interactions** - Drag-drop, real-time calculations, animated counters
+5. **Production Ready** - All components handle edge cases and are fully functional
+6. **No Setup Required** - Works out of the box with zero configuration
+
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/yourusername/astro-genai-startup-theme/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/ctrimm/astro-genai-startup-theme/issues).
 
 ## 📄 License
 
@@ -219,7 +442,7 @@ Copyright (c) 2025
 
 ## 🙏 Credits
 
-- Inspired by modern SaaS landing pages
+- Inspired by modern SaaS landing pages (Linear, Vercel, Stripe)
 - Components inspired by [reactbits.dev](https://reactbits.dev)
 - Built with love for the GenAI community
 
@@ -227,9 +450,16 @@ Copyright (c) 2025
 
 If you find this template useful, please consider:
 - ⭐ Starring the repository
-- 🐦 Sharing on Twitter
+- 🐦 Sharing on social media
 - 📝 Writing a blog post about it
+- 🤝 Contributing improvements
+
+## 📸 Screenshots
+
+Visit the [live demo](https://ctrimm.github.io/astro-genai-startup-theme/) to see all components in action!
 
 ---
 
 **Built with ❤️ for the GenAI community**
+
+*Want to build something amazing? This template has everything you need to launch your AI product today.*
