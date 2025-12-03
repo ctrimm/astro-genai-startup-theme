@@ -4,6 +4,8 @@ A modern, beautiful, and **completely free** Astro theme template designed speci
 
 ![GenAI Theme](https://img.shields.io/badge/Astro-5.16-blueviolet) ![License](https://img.shields.io/badge/license-MIT-green) ![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue)
 
+<img width="3809" height="2327" alt="Screenshot of GenAI Startup Homepage" src="https://github.com/user-attachments/assets/b086ecf1-1f3a-495c-927e-f940b88fc757" />
+
 ## ✨ Features
 
 - 🎨 **Beautiful Design** - Modern, clean UI with gradient accents and smooth animations
